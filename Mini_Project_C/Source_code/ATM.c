@@ -24,7 +24,7 @@ struct detial
 {
  char name[20];
  int an;
-}d1={"Akshat Singhal",12345},d2={"Akash Gupta",12346},d3={"Abhishek Pratap",12347},d4;
+}d1={"vinesh Choudhary",12345},d2={"sandeep Gupta",12346},d3={"madhu Pratap",12347},d4;
 int n,ch,a,b=0,h,d=0;
 int e,f=0,g,x,q,s,t=5;
 char c;
@@ -38,7 +38,7 @@ printf("WELCOME");
 gotoxy(38,14);
 printf("TO");
 gotoxy(28,18);
-printf("SINGHAL'S BANK OF INDIA");
+printf("PHANEENDRA'S BANK OF INDIA");
 getch();
 clrscr();
 star();
@@ -51,27 +51,27 @@ scanf("%d",&d4.an);
 clrscr();
 if(strcmp(d1.name,d4.name)==0&&d1.an==d4.an)
 {
- p[0] = fopen("akshat.txt","r");
+ p[0] = fopen("vinesh.txt","r");
  fscanf(p[0],"%d",&n);
  q=0;
  fclose(p[0]);
- p[0] = fopen("akshat.txt","w");
+ p[0] = fopen("vinesh.txt","w");
 }
 else if(strcmp(d2.name,d4.name)==0&&d2.an==d4.an)
 {
- p[1] = fopen("akash.txt","r");
+ p[1] = fopen("sandeep.txt","r");
  fscanf(p[1],"%d",&n);
  q=1;
  fclose(p[1]);
- p[1] = fopen("akash.txt","w");
+ p[1] = fopen("sandeep.txt","w");
 }
 else if(strcmp(d3.name,d4.name)==0&&d3.an==d4.an)
 {
- p[2] = fopen("abhishek.txt","r");
+ p[2] = fopen("madhu.txt","r");
  fscanf(p[2],"%d",&n);
  q=2;
  fclose(p[2]);
- p[2] = fopen("abhishek.txt","w");
+ p[2] = fopen("madhu.txt","w");
 }
 else
 {
@@ -90,7 +90,7 @@ if(n==0)
  gotoxy(33,14);
  printf("FOR VISITING");
  gotoxy(28,18);
- printf("SINGHAL'S BANK OF INDIA");
+ printf("PHANEENDRA'S BANK OF INDIA");
  getch();
 }
 else
@@ -168,31 +168,31 @@ switch(ch)
 	  scanf("%d",&g);
 	  if(g==d1.an)
 	  {
-	   r = fopen("akshat.txt","r");
+	   r = fopen("vinesh.txt","r");
 	   fscanf(r,"%d",&s);
 	   s=s+e;
 	   fclose(r);
-	   r = fopen("akshat.txt","w");
+	   r = fopen("vinesh.txt","w");
 	   fprintf(r,"%d",s);
 	   fclose(r);
 	  }
 	  else if(g==d2.an)
 	  {
-	   r = fopen("akash.txt","r");
+	   r = fopen("sandeep.txt","r");
 	   fscanf(r,"%d",&s);
 	   s=s+e;
 	   fclose(r);
-	   r = fopen("akash.txt","w");
+	   r = fopen("sandeep.txt","w");
 	   fprintf(r,"%d",s);
 	   fclose(r);
 	  }
 	  else if(g==d3.an)
 	  {
-	   r = fopen("abhishek.txt","r");
+	   r = fopen("madhu.txt","r");
 	   fscanf(r,"%d",&s);
 	   s=s+e;
 	   fclose(r);
-	   r = fopen("abhishek.txt","w");
+	   r = fopen("madhu.txt","w");
 	   fprintf(r,"%d",s);
 	   fclose(r);
 	  }
@@ -255,7 +255,7 @@ for(i=3;i<24;i++)
 gotoxy(26,3);
 printf("-----------------------------");
 gotoxy(29,4);
-printf("SINGHAL'S BANK OF INDIA");
+printf("PHANEENDRA'S BANK OF INDIA");
 gotoxy(26,5);
 printf("-----------------------------");
 getdate(&dt);
